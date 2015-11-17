@@ -1,0 +1,35 @@
+{
+  "choose-action-complaint": {
+    "legend": "What would you like to do?",
+    "options": {
+      "make-enquiry": {
+        "legend": "Make an enquiry",
+        "make-enquiry-option": {
+          "label": "Make an enquiry about passport application in progress"
+        }
+      },
+      "complaints": {
+        "legend": "Make a complaint",
+        "label": "Complaints"
+      },
+      "other-information": {
+        "legend": "Other information about passport",
+        "other-information-renew": {
+          "label": "Information about renewing existing passports"
+        },
+        "other-information-passport": {
+          "label": "Information about passport applications"
+        },
+        "other-information-lost-passport": {
+          "label": "Information about lost,stolen or damaged application"
+        }
+      },
+      "general-enquiries": {
+        "legend": "General enquiries",
+        "general-enquiries-option": {
+          "label": "Contact us"
+        }
+      }
+    }
+  }
+}

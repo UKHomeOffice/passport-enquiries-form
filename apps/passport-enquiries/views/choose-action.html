@@ -1,0 +1,96 @@
+{{<layout}}
+{{$step}}Question 1{{/step}}
+{{$journeyHeader}}
+{{#t}}journeys.lost.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$pageTitle}}{{#t}}pages.choose-action.header{{/t}}{{/pageTitle}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+<fieldset id="choose-action-complaint-group" class=" " data-toggle="input-submit">
+    <legend>
+        <span class="form-label-bold">{{#t}}fields.choose-action-complaint.legend{{/t}}</span>
+    </legend>
+    <br/>
+
+    <div style="clear: both">
+        <legend>
+            <span>{{#t}}fields.choose-action-complaint.options.make-enquiry.legend{{/t}}</span>
+        </legend>
+        <label class="block-label" for="make-enquiry-option">
+            <input type="radio" name="choose-action-complaint" id="make-enquiry-option"
+                   value="general-enquiries-option" aria-required="true">
+            {{#t}}fields.choose-action-complaint.options.make-enquiry.make-enquiry-option.label{{/t}}
+        </label>
+    </div>
+
+
+    <div style="clear: both">
+        <legend>
+            <span>{{#t}}fields.choose-action-complaint.options.other-information.legend{{/t}}</span>
+        </legend>
+        <label class="block-label" for="other-information-renew">
+            <input type="radio" name="choose-action-complaint" id="other-information-renew"
+                   value="other-information-renew" aria-required="true">
+            {{#t}}fields.choose-action-complaint.options.other-information.other-information-renew.label{{/t}}
+        </label>
+
+        <label class="block-label" for="other-information-passport">
+            <input type="radio" name="choose-action-complaint" id="other-information-passport"
+                   value="other-information-passport" aria-required="true">
+            {{#t}}fields.choose-action-complaint.options.other-information.other-information-passport.label{{/t}}
+        </label>
+
+        <label class="block-label" for="other-information-lost-passport">
+            <input type="radio" name="choose-action-complaint" id="other-information-lost-passport"
+                   value="other-information-lost-passport" aria-required="true">
+            {{#t}}fields.choose-action-complaint.options.other-information.other-information-lost-passport.label{{/t}}
+        </label>
+    </div>
+
+    <div style="clear: both">
+        <legend>
+            <span>{{#t}}fields.choose-action-complaint.options.complaints.legend{{/t}}</span>
+        </legend>
+        <label class="block-label" for="choose-action-complaint-complaints">
+            <input type="radio" name="choose-action-complaint" id="choose-action-complaint-complaints"
+                   value="complaints" aria-required="true">
+            {{#t}}fields.choose-action-complaint.options.complaints.label{{/t}}
+        </label>
+    </div>
+
+    <div style="clear: both">
+        <legend>
+            <span>{{#t}}fields.choose-action-complaint.options.general-enquiries.legend{{/t}}</span>
+        </legend>
+        <label class="block-label" for="general-enquiries-option">
+            <input type="radio" name="choose-action-complaint" id="general-enquiries-option"
+                   value="general-enquiries-option" aria-required="true" onselect="">
+            {{#t}}fields.choose-action-complaint.options.general-enquiries.general-enquiries-option.label{{/t}}
+        </label>
+    </div>
+
+</fieldset>
+
+
+<!--<input type="submit" value="Continue" class="button" disabled="{{{choose-action-complaint}}}" id="input-submit" >-->
+
+{{#input-submit}}{{#id}}test{{/id}}ThisIsNotButton{{/input-submit}}
+
+
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}
