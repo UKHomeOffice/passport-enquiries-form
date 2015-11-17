@@ -14,6 +14,16 @@ var Bloodhound = require('typeahead.js-browserify').Bloodhound;
 
 typeahead.loadjQueryPlugin();
 
+var inputRadio = $('.buttonTrigger :input');
+
+$.each(inputRadio, function(index, input) {
+  $(input).click(function () {
+    $("#input-submit").removeAttr('disabled');
+  });
+});
+
+
+
 var nonEuCountries = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.whitespace,
   queryTokenizer: Bloodhound.tokenizers.whitespace,

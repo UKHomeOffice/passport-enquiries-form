@@ -16,7 +16,7 @@
 
 {{$form}}
 
-<fieldset id="choose-action-complaint-group" class=" " data-toggle="input-submit">
+<fieldset id="choose-action-complaint-group" class="buttonTrigger" data-toggle="changeStatus()">
     <legend>
         <span class="form-label-bold">{{#t}}fields.choose-action-complaint.legend{{/t}}</span>
     </legend>
@@ -74,7 +74,7 @@
         </legend>
         <label class="block-label" for="general-enquiries-option">
             <input type="radio" name="choose-action-complaint" id="general-enquiries-option"
-                   value="general-enquiries-option" aria-required="true" onselect="">
+                   value="general-enquiries-option" aria-required="true">
             {{#t}}fields.choose-action-complaint.options.general-enquiries.general-enquiries-option.label{{/t}}
         </label>
     </div>
@@ -82,9 +82,7 @@
 </fieldset>
 
 
-<!--<input type="submit" value="Continue" class="button" disabled="{{{choose-action-complaint}}}" id="input-submit" >-->
-
-{{#input-submit}}{{#id}}test{{/id}}ThisIsNotButton{{/input-submit}}
+<input type="submit" value="Continue" class="button" disabled="true" id="input-submit" >
 
 
 {{/form}}
