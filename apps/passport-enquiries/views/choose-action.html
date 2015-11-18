@@ -28,7 +28,7 @@
         </legend>
         <label class="block-label" for="make-enquiry-option">
             <input type="radio" name="choose-action-complaint-radio" id="make-enquiry-option"
-                   value="general-enquiries-option" aria-required="true">
+                   value="passport-in-progress" aria-required="true">
             {{#t}}fields.choose-action-complaint.options.make-enquiry.make-enquiry-option.label{{/t}}
         </label>
     </div>
@@ -82,7 +82,7 @@
 </fieldset>
 
 
-<input type="submit" value="Continue" class="button" disabled="true" id="input-submit">
+{{> partials-input-disabled-submit}}
 
 
 {{/form}}
