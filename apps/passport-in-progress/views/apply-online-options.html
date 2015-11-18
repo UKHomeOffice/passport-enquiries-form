@@ -1,5 +1,5 @@
 {{<layout}}
-{{$step}}Question 2{{/step}}
+{{$step}}Question 3{{/step}}
 {{$journeyHeader}}
 {{#t}}journeys.lost.header{{/t}}
 {{/journeyHeader}}
@@ -8,19 +8,17 @@
 {{> partials-navigation}}
 {{/propositionHeader}}
 
-{{$pageTitle}}{{#t}}pages.apply-online.header{{/t}}{{/pageTitle}}
+{{$pageTitle}}{{#t}}pages.apply-online-options.header{{/t}}{{/pageTitle}}
 
 {{$content}}
-
-<p> {{#t}}pages.apply-online.header{{/t}} </p>
 
 
 {{<partials-form}}
 
 {{$form}}
 
-<fieldset id="apply-online-radio-group" class="buttonTrigger">
-  {{#radio-group}}apply-online-radio{{/radio-group}}
+<fieldset id="apply-online-options-radio-group" class="buttonTrigger">
+  {{#radio-group}}apply-online-options-radio{{/radio-group}}
 </fieldset>
 
 <input type="submit" value="Continue" class="button" disabled="true" id="input-submit">

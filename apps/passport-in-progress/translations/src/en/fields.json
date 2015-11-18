@@ -1,0 +1,38 @@
+{
+  "apply-online-radio": {
+    "legend": "Did you apply online?",
+    "options": {
+      "yes": {
+        "label": "Yes"
+      },
+      "no": {
+        "label": "No"
+      }
+    }
+  },
+  "apply-online-options-radio": {
+    "legend": "What would you like to do?",
+    "options": {
+      "enquiry": {
+        "label": "Enquire about an existing passport application"
+      },
+      "replacement": {
+        "label": "Request a replacement declaration form"
+      },
+      "contactus": {
+        "label": "Contact us"
+      }
+    }
+  },
+  "whose-passport-radio": {
+    "legend": "Whose passport application is your enquiry about?",
+    "options": {
+      "mypassport": {
+        "label": "My passport application"
+      },
+      "someone": {
+        "label": "Someone elses passport application"
+      }
+    }
+  }
+}
