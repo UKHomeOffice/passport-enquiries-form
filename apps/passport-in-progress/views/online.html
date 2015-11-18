@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
- this is online.html file
-</body>
-</html>
+{{<layout}}
+{{$step}}Question 1{{/step}}
+{{$journeyHeader}}
+{{#t}}journeys.lost.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$pageTitle}}{{#t}}pages.choose-action.header{{/t}}{{/pageTitle}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+
+
+<input type="submit" value="Continue" class="button" disabled="true" id="input-submit">
+
+
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

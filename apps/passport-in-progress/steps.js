@@ -3,11 +3,11 @@
 module.exports = {
   '/': {
     controller: require('../common/controllers/start'),
-    next: '/online'
+    next: '/apply-online'
   },
-  '/online': {
+  '/apply-online': {
 
-    template: 'online'
+    template: 'apply-online'
 
   }
 };
