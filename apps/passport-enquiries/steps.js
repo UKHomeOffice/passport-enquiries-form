@@ -9,7 +9,7 @@ module.exports = {
     controller: require('./controllers/choose-action'),
     template: 'choose-action',
     fields: [
-      'choose-action-complaint',
+      'choose-action-complaint-radio',
       'other-information-renew',
       'other-information-passport',
       'other-information-lost-passport',

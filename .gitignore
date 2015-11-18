@@ -1,5 +1,5 @@
 #ide specific
-.idea/
+.idea/*
 
 node_modules
 public
