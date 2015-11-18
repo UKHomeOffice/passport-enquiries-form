@@ -1,0 +1,15 @@
+{
+  "complaints": {
+    "header": "Complaints"
+  },
+  "confirmation": {
+    "header": "Thank you, we have received your information",
+    "email": "We have sent you an email containing the information you have provided to",
+    "next": {
+      "header": "What happens next",
+      "review-info": "We will now review the information you have sent us and will respond to your complaint.",
+      "five-days": "We will get back to you within 5 working days. For example if you contacted us on a Monday you will hear back from us by the following Monday.",
+      "advise-you": "We will then advise you what to do next."
+    }
+  }
+}

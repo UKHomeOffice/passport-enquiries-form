@@ -1,0 +1,14 @@
+{
+  "full-name-input": {
+    "label": "Your full name"
+  },
+  "ref-number-input": {
+    "label": "Your application reference number"
+  },
+  "email-input": {
+    "label": "Your email address"
+  },
+  "complaint-details-input": {
+    "label": "Details of your complaint"
+  }
+}

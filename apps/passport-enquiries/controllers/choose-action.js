@@ -4,41 +4,23 @@ var util = require('util');
 var _ = require('underscore');
 
 var Controller = require('../../../lib/base-controller');
-var Model = require('../../common/models/email');
+var Logger = require('../../../lib/logger')
 
-var Submit = function Submit() {
+var Action = function Action() {
   Controller.apply(this, arguments);
 };
 
-util.inherits(Submit, Controller);
+util.inherits(Action, Controller);
 
-function getReports(req) {
-  var sessionData = _.pick(req.sessionModel.toJSON(), _.identity);
-  var data = sessionData.report;
-  return data;
-}
+Action.prototype.saveValues = function saveValues(req, res, callback) {
+  var formValue = req.form.values;
+  var chosenAction = formValue['choose-action-complaint-radio'];
 
-Submit.prototype.getValues = function locals(req) {
-  /* get Form Name */
-  var formName = req.query.formName;
-
-  if (formName !== undefined) {
-    req.sessionModel.set('formName', formName);
+  if (chosenAction !== "" || chosenAction !== null) {
+    res.redirect('/' + chosenAction);
   } else {
-    // Log form name is not defined
+    Logger.error('The chosen action has not been selected.')
   }
-  var data = getReports(req);
-  _.each(data, function addIndex(d, i) {
-    d.index = i;
-  });
-  Controller.prototype.getValues.apply(this, arguments);
 };
 
-Submit.prototype.saveValues = function saveValues(req, res, callback) {
-console.log('--------------debug 1-----------');
-  res.redirect('../passport-in-progress');
-
-
-};
-
-module.exports = Submit;
+module.exports = Action;

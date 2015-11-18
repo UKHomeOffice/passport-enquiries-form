@@ -1,0 +1,44 @@
+{{<layout}}
+{{$journeyHeader}}
+{{#t}}journeys.passport-enquiries.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+
+{{$header}}{{#t}}pages.complaints.header{{/t}}{{/header}}
+
+
+  {{$content}}
+
+    {{$back}}{{/back}}
+
+    {{<partials-form}}
+
+      {{$form}}
+
+        <div>
+          <p>We aim to provide a service that can fulfil your expectation but
+            unfortunately sometimes this does not happen. Please fill out the
+            form below to tell us more about your issue.</p>
+        </div>
+
+        {{#input-text}}full-name-input{{/input-text}}
+        {{#input-text}}ref-number-input{{/input-text}}
+        {{#input-text}}email-input{{/input-text}}
+        {{#input-text}}complaint-details-input{{/input-text}}
+
+        {{#input-submit}}sendComplaint{{/input-submit}}
+
+        {{> partials-other-ways}}
+      {{/form}}
+
+    {{/partials-form}}
+  {{/content}}
+{{/layout}}
