@@ -6,6 +6,7 @@ module.exports = {
     next: '/choose-action'
   },
   '/choose-action': {
+    controller: require('./controllers/choose-action'),
     template: 'choose-action',
     fields: [
       'choose-action-complaint',
@@ -14,6 +15,7 @@ module.exports = {
       'other-information-lost-passport',
       'general-enquiries-option'
     ],
+    next: '/hello'
 
   }
 };

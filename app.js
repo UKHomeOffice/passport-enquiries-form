@@ -85,6 +85,7 @@ app.use(initSession);
 
 // apps
 app.use(require('./apps/passport-enquiries/'));
+app.use(require('./apps/passport-in-progress/'));
 
 app.get('/cookies', function renderCookies(req, res) {
   res.render('cookies');
