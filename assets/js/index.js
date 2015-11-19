@@ -22,6 +22,8 @@ $.each(inputRadio, function(index, input) {
   });
 });
 
+//application-reference page
+
 if ($('#application-reference-number').length) {
   $('#application-reference-number').blur(function(){
 
@@ -47,8 +49,16 @@ if ($('#application-reference-number').length) {
   });
 }
 
-
-
+//full-name page
+if($('#full-name-text').length) {
+  $('#full-name-text').blur(function() {
+    if ($('#full-name-text').val() != '') {
+      $("#input-submit").removeAttr('disabled');
+    } else {
+      $('#input-submit').attr("disabled",true);
+    }
+  });
+}
 
 
 var nonEuCountries = new Bloodhound({

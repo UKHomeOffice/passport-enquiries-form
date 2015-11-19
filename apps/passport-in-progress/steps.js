@@ -45,6 +45,14 @@ module.exports = {
     ],
     next: '/full-name',
     backLink: 'application-reference'
+  },
+  '/full-name': {
+    template: 'full-name',
+    fields: [
+      'full-name-text'
+    ],
+    next: '/full-address',
+    backLink: 'application-within-uk'
   }
 
 };

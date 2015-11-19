@@ -56,5 +56,8 @@
         "label": "No"
       }
     }
+  },
+  "full-name-text":{
+    "label": "This must be the same as on the application form"
   }
 }

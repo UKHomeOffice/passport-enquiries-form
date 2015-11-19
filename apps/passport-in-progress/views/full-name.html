@@ -1,0 +1,41 @@
+{{<layout}}
+{{$step}}Question 5{{/step}}
+{{$journeyHeader}}
+{{#t}}journeys.lost.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$pageTitle}}{{#t}}pages.full-name.header{{/t}}{{/pageTitle}}
+
+{{$content}}
+
+<p> {{#t}}pages.full-name.header{{/t}} </p>
+
+
+{{<partials-form}}
+
+{{$form}}
+
+<fieldset id="full-name-radio-group" class="textTrigger">
+
+  <legend class="visuallyhidden">
+    <span class="form-label-bold">{{#t}}fields.full-name-text.legend{{/t}}</span>
+  </legend>
+
+  {{#input-text}}full-name-text{{/input-text}}
+
+</fieldset>
+
+<input type="submit" value="Continue" class="button" disabled="true" id="input-submit">
+
+
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}
