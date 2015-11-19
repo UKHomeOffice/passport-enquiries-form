@@ -8,5 +8,5 @@ module.exports = _.extend(
   require('./whose-passport'),
   require('./application-reference'),
   require('./application-within-uk'),
-  require('./full-name')
+  require('./applicant-full-name')
 );

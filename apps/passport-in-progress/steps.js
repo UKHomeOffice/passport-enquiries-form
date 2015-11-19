@@ -43,13 +43,13 @@ module.exports = {
     fields: [
       'application-within-uk-radio'
     ],
-    next: '/full-name',
+    next: '/applicant-full-name',
     backLink: 'application-reference'
   },
-  '/full-name': {
-    template: 'full-name',
+  '/applicant-full-name': {
+    template: 'applicant-full-name',
     fields: [
-      'full-name-text'
+      'applicant-full-name-text'
     ],
     next: '/full-address',
     backLink: 'application-within-uk'

@@ -57,7 +57,7 @@
       }
     }
   },
-  "full-name-text":{
+  "applicant-full-name-text":{
     "label": "This must be the same as on the application form"
   }
 }

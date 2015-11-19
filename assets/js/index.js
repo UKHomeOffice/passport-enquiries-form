@@ -50,9 +50,9 @@ if ($('#application-reference-number').length) {
 }
 
 //full-name page
-if($('#full-name-text').length) {
-  $('#full-name-text').blur(function() {
-    if ($('#full-name-text').val() != '') {
+if($('#applicant-full-name-text').length) {
+  $('#applicant-full-name-text').blur(function() {
+    if ($('#applicant-full-name-text').val() != '') {
       $("#input-submit").removeAttr('disabled');
     } else {
       $('#input-submit').attr("disabled",true);
