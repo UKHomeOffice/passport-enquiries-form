@@ -7,7 +7,11 @@
   },
   "applicant-full-name": {
     "header": "What's the applicant's full name?"
+  },
+  "full-name": {
+    "header": "What's your full name?"
+  },
+  "email-address": {
+    "header": "What's your email address?"
   }
-
-
 }

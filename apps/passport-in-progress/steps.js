@@ -43,8 +43,24 @@ module.exports = {
     fields: [
       'application-within-uk-radio'
     ],
-    next: '/applicant-full-name',
+    next: '/full-name',
     backLink: 'application-reference'
+  },
+  '/full-name': {
+    template: 'full-name',
+    fields: [
+      'full-name-text'
+    ],
+    next: '/email-address',
+    backLink: 'application-within-uk'
+  },
+  '/email-address': {
+    template: 'email-address',
+    fields: [
+      'email-address-text'
+    ],
+    next: '/more-information',
+    backLink: 'full-name'
   },
   '/applicant-full-name': {
     template: 'applicant-full-name',
@@ -54,5 +70,4 @@ module.exports = {
     next: '/full-address',
     backLink: 'application-within-uk'
   }
-
 };

@@ -59,5 +59,11 @@
   },
   "applicant-full-name-text":{
     "label": "This must be the same as on the application form"
+  },
+  "full-name-text":{
+    "label": "This must be the same as on the application form"
+  },
+  "email-address-text":{
+    "label": "This must be the same as on the application form"
   }
 }

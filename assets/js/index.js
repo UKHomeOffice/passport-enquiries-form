@@ -49,17 +49,46 @@ if ($('#application-reference-number').length) {
   });
 }
 
-//full-name page
-if($('#applicant-full-name-text').length) {
-  $('#applicant-full-name-text').blur(function() {
-    if ($('#applicant-full-name-text').val() != '') {
-      $("#input-submit").removeAttr('disabled');
-    } else {
-      $('#input-submit').attr("disabled",true);
+////full-name page
+//if($('#applicant-full-name-text').length) {
+//  $('#applicant-full-name-text').blur(function() {
+//    if ($('#applicant-full-name-text').val() != '') {
+//      $("#input-submit").removeAttr('disabled');
+//    } else {
+//      $('#input-submit').attr("disabled",true);
+//    }
+//  });
+//}
+
+//
+////full-name page
+//if($('#full-name-text').length) {
+//  $('#full-name-text').blur(function() {
+//    if ($('#full-name-text').val() != '') {
+//      $("#input-submit").removeAttr('disabled');
+//    } else {
+//      $('#input-submit').attr("disabled",true);
+//    }
+//  });
+//}
+
+
+
+var inputText = $('.textTrigger :input');
+
+$.each(inputText, function(index, input) {
+  $(input).click(function () {
+    if($(input).length) {
+      $(input).blur(function() {
+        if ($(input).val() != '') {
+          $("#input-submit").removeAttr('disabled');
+        } else {
+          $('#input-submit').attr("disabled",true);
+        }
+      });
     }
   });
-}
-
+});
 
 var nonEuCountries = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.whitespace,
