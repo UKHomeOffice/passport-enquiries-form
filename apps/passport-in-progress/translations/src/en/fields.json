@@ -31,7 +31,18 @@
         "label": "My passport application"
       },
       "someone": {
-        "label": "Someone elses passport application"
+        "label": "Someone else's passport application"
+      }
+    }
+  },
+  "application-reference-number": {
+    "label": "This can be found in the top left on the first page of the application form"
+  },
+  "application-reference-radio": {
+    "legend": " ",
+    "options": {
+      "ref-not-known": {
+        "label": "I don't know the reference number"
       }
     }
   }

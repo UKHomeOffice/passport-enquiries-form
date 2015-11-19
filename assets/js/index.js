@@ -22,6 +22,33 @@ $.each(inputRadio, function(index, input) {
   });
 });
 
+if ($('#application-reference-number').length) {
+  $('#application-reference-number').blur(function(){
+
+    if ($('#application-reference-number').val() === '') {
+      $('#application-reference-radio-ref-not-known').removeAttr('disabled');
+      $('#input-submit').attr("disabled",true);
+    } else {
+      $('#application-reference-radio-ref-not-known').prop('checked', false);
+      $('#input-submit').removeAttr('disabled');
+    }
+  });
+
+  $('#application-reference-number').click(function() {
+    var label = $('#application-reference-radio-ref-not-known').closest('label');
+    $(label).removeClass('selected');
+    $('#application-reference-radio-ref-not-known').prop('checked', false);
+    $('#input-submit').attr("disabled",true);
+  });
+
+  $('#application-reference-radio-ref-not-known').click(function() {
+    $('#application-reference-number').val('');
+    $('#input-submit').removeAttr('disabled');
+  });
+}
+
+
+
 
 
 var nonEuCountries = new Bloodhound({

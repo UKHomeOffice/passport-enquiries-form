@@ -7,7 +7,7 @@ module.exports = {
   },
   '/apply-online': {
     template: 'apply-online',
-    fields:[
+    fields: [
       'apply-online-radio'
     ],
     next: '/apply-online-options',
@@ -15,19 +15,29 @@ module.exports = {
   },
   '/apply-online-options': {
     template: 'apply-online-options',
-    fields:[
+    fields: [
       'apply-online-options-radio'
     ],
     next: '/whose-passport',
     backLink: 'apply-online'
   },
-  '/whose-passport' : {
+  '/whose-passport': {
     template: 'whose-passport',
-    fields:[
+    fields: [
       'whose-passport-radio'
     ],
-    //next: '/application-reference',
+    next: '/application-reference',
     backLink: 'apply-online-options'
-}
+  },
+  '/application-reference': {
+    template: 'application-reference',
+    fields: [
+      'application-reference-number',
+      'application-reference-radio'
+    ],
+    next: '/application-within-uk',
+    backLink: 'whose-passport'
+  },
+
 
 };
