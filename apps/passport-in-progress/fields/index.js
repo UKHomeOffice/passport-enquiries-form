@@ -6,5 +6,6 @@ module.exports = _.extend(
   require('./apply-online'),
   require('./apply-online-options'),
   require('./whose-passport'),
-  require('./application-reference')
+  require('./application-reference'),
+  require('./application-within-uk')
 );

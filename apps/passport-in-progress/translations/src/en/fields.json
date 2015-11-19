@@ -45,5 +45,16 @@
         "label": "I don't know the reference number"
       }
     }
+  },
+  "application-within-uk-radio": {
+    "legend": "Did you make your application from within the UK?",
+    "options": {
+      "yes": {
+        "label": "Yes"
+      },
+      "no": {
+        "label": "No"
+      }
+    }
   }
 }

@@ -38,6 +38,13 @@ module.exports = {
     next: '/application-within-uk',
     backLink: 'whose-passport'
   },
-
+  '/application-within-uk': {
+    template: 'application-within-uk',
+    fields: [
+      'application-within-uk-radio'
+    ],
+    next: '/full-name',
+    backLink: 'application-reference'
+  }
 
 };

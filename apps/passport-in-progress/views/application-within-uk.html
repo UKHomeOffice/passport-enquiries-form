@@ -1,0 +1,33 @@
+{{<layout}}
+{{$step}}Question 6{{/step}}
+{{$journeyHeader}}
+{{#t}}journeys.lost.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$pageTitle}}{{#t}}fields.application-within-uk-radio.legend{{/t}}{{/pageTitle}}
+
+{{$content}}
+
+
+{{<partials-form}}
+
+{{$form}}
+
+<fieldset id="application-within-uk-radio-group" class="buttonTrigger">
+  {{#radio-group}}application-within-uk-radio{{/radio-group}}
+</fieldset>
+
+<input type="submit" value="Continue" class="button" disabled="true" id="input-submit">
+
+
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}
