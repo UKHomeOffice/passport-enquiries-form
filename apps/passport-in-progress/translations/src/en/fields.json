@@ -65,5 +65,9 @@
   },
   "email-address-text":{
     "label": "This must be the same as on the application form"
+  },
+  "more-information-textarea":{
+    "legend": "Tell us more about your enquiry",
+    "label": "Provide as much information as possible and tell us how we can help"
   }
 }

@@ -10,5 +10,6 @@ module.exports = _.extend(
   require('./application-within-uk'),
   require('./full-name'),
   require('./email-address'),
+  require('./more-information'),
   require('./applicant-full-name')
 );

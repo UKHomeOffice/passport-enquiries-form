@@ -1,0 +1,34 @@
+{{<layout}}
+{{$step}}Question 9{{/step}}
+{{$journeyHeader}}
+{{#t}}journeys.lost.header{{/t}}
+{{/journeyHeader}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$pageTitle}}{{#t}}pages.more-information.header{{/t}}{{/pageTitle}}
+
+{{$content}}
+
+<p> {{#t}}pages.more-information.header{{/t}} </p>
+
+<p> {{#t}}fields.more-information-textarea.legend{{/t}} </p>
+
+{{<partials-form}}
+
+{{$form}}
+
+{{#textarea}}more-information-textarea{{/textarea}}
+
+{{#input-submit}}continue{{/input-submit}}
+
+
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

@@ -13,5 +13,8 @@
   },
   "email-address": {
     "header": "What's your email address?"
+  },
+  "more-information":{
+    "header": "The information you have provided will help us to find your application. We now need to understand how you would like us to help."
   }
 }

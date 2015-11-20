@@ -62,6 +62,21 @@ module.exports = {
     next: '/more-information',
     backLink: 'full-name'
   },
+
+  '/more-information': {
+  template: 'more-information',
+    fields: [
+    'more-information-textarea'
+  ],
+    next: '/confirm',
+    backLink: 'email-address'
+},
+
+
+
+
+
+
   '/applicant-full-name': {
     template: 'applicant-full-name',
     fields: [
