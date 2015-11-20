@@ -64,18 +64,19 @@ module.exports = {
   },
 
   '/more-information': {
-  template: 'more-information',
+    template: 'more-information',
     fields: [
-    'more-information-textarea'
-  ],
+      'more-information-textarea'
+    ],
     next: '/confirm',
     backLink: 'email-address'
-},
-
-
-
-
-
+  },
+  '/confirm': {
+    controller: require('../common/controllers/confirm'),
+    template: 'confirm',
+    next: '/confirmation',
+    backLink: 'more-information'
+  },
 
   '/applicant-full-name': {
     template: 'applicant-full-name',

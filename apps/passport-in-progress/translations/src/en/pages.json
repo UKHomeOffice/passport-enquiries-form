@@ -16,5 +16,17 @@
   },
   "more-information":{
     "header": "The information you have provided will help us to find your application. We now need to understand how you would like us to help."
+  },
+  "confirm-details":{
+    "header": "Check these details before submitting your enquiry"
+  },
+  "your-details": {
+    "title": "Your details",
+    "table": {
+      "headers": {
+        "your-name": "Your name",
+        "your-email-address": "Your email address"
+      }
+    }
   }
 }

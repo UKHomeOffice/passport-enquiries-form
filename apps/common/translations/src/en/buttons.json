@@ -3,5 +3,6 @@
   "send": "Send",
   "change": "Change",
   "close": "Close",
-  "sendComplaint": "Send complaint"
+  "sendComplaint": "Send complaint",
+  "submitEnquiry": "Submit enquiry"
 }
